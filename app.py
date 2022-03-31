@@ -160,7 +160,17 @@ with st.expander("Facial & skin treatment"):
          be random.
      """)
      st.image("https://cdn.shopify.com/s/files/1/0282/5961/4817/files/SB-3-SHOP-NOW-BUTTONS-tools_600x.jpg?v=1587723060")
-     st.date_input("Make An Appointment")
+     
+st.markdown("<h1 style='text-align: center; font-family:  cursive, sans-serif; color: pink;'><b>Make An Appointment</b></h1>", unsafe_allow_html=True)
+#st.text_input("")
+names = pd.DataFrame({'labels':["GoodWell","HairBotox","Hannon","Joico","Moroccanoil","Mizani"]})
+nameSelect = st.multiselect(
+     "Type your category:",
+     options=list(names['labels']), # convert to list
+     default=["GoodWell"]
+ )
+st.date_input("Select the date:")
+st.button("BOOM")
 st.markdown("<h1 style='text-align: center; font-family:  cursive, sans-serif; color: pink;'><b>Some of Our Brands</b></h1>", unsafe_allow_html=True)
 col1, col2 , col3 = st.columns(3) 
 col4, col5, col6 = st.columns(3)
