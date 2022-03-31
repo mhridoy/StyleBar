@@ -40,6 +40,7 @@ lottie_barbar =load_lottieurl(lottie_url_barbar)
 
 st_lottie(lottie_hello, height=100)
 st.markdown("<h1 style='text-align: center; font-family:  cursive, sans-serif; color: pink;'>STYLE BAR</h1>", unsafe_allow_html=True)
+st.markdown("<h6 style='text-align: center; font-family:  cursive, sans-serif; color: #CB0B94;'>Made with love 💖</h1>", unsafe_allow_html=True)
 #st_lottie(lottie_barbar,height=200)
 
 
