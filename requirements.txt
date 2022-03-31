@@ -23,6 +23,7 @@ GitPython==3.1.27
 idna==3.3
 importlib-metadata==4.11.3
 ipykernel==6.10.0
+ipython
 ipython-genutils==0.2.0
 ipywidgets==7.7.0
 jedi==0.18.1
@@ -42,7 +43,7 @@ nest-asyncio==1.5.4
 notebook==6.4.10
 numpy
 packaging==21.3
-pandas
+pandas==1.4.1
 pandocfilters==1.5.0
 parso==0.8.3
 pickleshare==0.7.5
@@ -62,7 +63,7 @@ pyrsistent==0.18.1
 python-dateutil==2.8.2
 pytz==2022.1
 pytz-deprecation-shim==0.1.0.post0
-pywin32
+pywin32==303
 pywinpty==2.0.5
 pyzmq==22.3.0
 requests==2.27.1
