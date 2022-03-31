@@ -1,6 +1,4 @@
-from turtle import width
-from typing import Any, Dict, List
-from urllib import response
+
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
