@@ -7,7 +7,18 @@ import pandas as pd
 import streamlit.components.v1 as components
 import requests as re 
 # Page Config
-st.set_page_config(page_title="StyleBar", layout="wide")
+st.set_page_config(layout="wide")
+
+
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
+#st.set_page_config(page_title="StyleBar", layout="wide")
 st.sidebar.image("logo.png", use_column_width=True,width=300)
 #st.sidebar.title("Haircut & Treatment")
 lottie_url_download = "https://assets5.lottiefiles.com/packages/lf20_aabgnkl3.json"
