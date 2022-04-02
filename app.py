@@ -1,11 +1,15 @@
 
+from click import option
 import requests
+from soupsieve import select
 import streamlit as st
 from streamlit_lottie import st_lottie
 from streamlit_lottie import st_lottie_spinner
 import pandas as pd
 import streamlit.components.v1 as components
 import requests as re 
+from streamlit_option_menu import option_menu
+
 # Page Config
 st.set_page_config(layout="wide")
 
@@ -40,7 +44,7 @@ lottie_barbar =load_lottieurl(lottie_url_barbar)
 
 st_lottie(lottie_hello, height=100)
 st.markdown("<h1 style='text-align: center; font-family:  cursive, sans-serif; color: pink;'>STYLE BAR</h1>", unsafe_allow_html=True)
-#st.markdown("<h6 style='text-align: center; font-family:  cursive, sans-serif; color: #CB0B94;'>Made with love 💖</h1>", unsafe_allow_html=True)
+st.markdown("<h6 style='text-align: center; font-family:  cursive, sans-serif; color: #CB0B94;'>Made with love 💖</h1>", unsafe_allow_html=True)
 #st_lottie(lottie_barbar,height=200)
 
 
@@ -93,7 +97,7 @@ st.markdown("<h1 style='text-align: center; font-family:  cursive, sans-serif; c
 
 
 # Search Options 
-query = st.text_input("Search Our Services! ")
+query = st.text_input("Search Our Products! ")
 st.button("Search")
 # Unsplash API KEY
 #api_key = "JSOFZJXh0Ejyo_FVM5ChHe86RuDrofHVi2qYD2g3rMU"
@@ -217,6 +221,8 @@ with col2:
     st.success("Store Location")
     st.info("0A Okavango Rd, Brackenfell North, Cape Town, 7560, South Africa \n phone0813786407 emailcapegate@stylebar.co.za")
 
-st.sidebar.button("LogIn")
-st.sidebar.button("Registration")
-st.sidebar.button("About Me")
+with st.sidebar:
+    selected = option_menu(
+        menu_title = "Main Menu",
+        options =["Home","Message","Login","Registrations"]
+    )
