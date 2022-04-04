@@ -1,4 +1,6 @@
 numpy
 pandas
+streamlit
 Pillow==9.0.1
 requests==2.27.1
+streamlit_option_menu

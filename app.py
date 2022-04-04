@@ -43,8 +43,8 @@ lottie_url_barbar = "https://assets7.lottiefiles.com/packages/lf20_lo5a0g5i.json
 lottie_barbar =load_lottieurl(lottie_url_barbar)
 
 st_lottie(lottie_hello, height=100)
-st.markdown("<h1 style='text-align: center; font-family:  cursive, sans-serif; color: pink;'>STYLE BAR</h1>", unsafe_allow_html=True)
-st.markdown("<h6 style='text-align: center; font-family:  cursive, sans-serif; color: #CB0B94;'>Made with love 💖</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; font-family:  Inter,ui-sans-serif,system-ui; color: rgb(154, 93, 255);'>STYLE BAR</h1>", unsafe_allow_html=True)
+#st.markdown("<h6 style='text-align: center; font-family:  cursive, sans-serif; color: #CB0B94;'>Made with love 💖</h1>", unsafe_allow_html=True)
 #st_lottie(lottie_barbar,height=200)
 
 
@@ -126,7 +126,7 @@ for i in range(0,len(url_array)-3):
         st.image(url_array[i+2])
         st.write(name_array[i+2])
 
-st.markdown("<h1 style='text-align: center; font-family:  cursive, sans-serif; color: pink;'>Our Services</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; font-family:  Inter,ui-sans-serif,system-ui; color: rgb(154, 93, 255);'>Our Services</h1>", unsafe_allow_html=True)
 imageCarouselComponent = components.declare_component("image-carousel-component", path="frontend/public")
 
 imageUrls = [
@@ -224,5 +224,9 @@ with col2:
 with st.sidebar:
     selected = option_menu(
         menu_title = "Main Menu",
-        options =["Home","Message","Login","Registrations"]
-    )
+        options =["Home","Message","Login","Registrations"],
+        icons=['house', 'message'],
+        menu_icon="cast", default_index=1,
+        )
+
+    
