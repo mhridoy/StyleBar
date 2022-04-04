@@ -43,7 +43,7 @@ lottie_url_barbar = "https://assets7.lottiefiles.com/packages/lf20_lo5a0g5i.json
 lottie_barbar =load_lottieurl(lottie_url_barbar)
 
 st_lottie(lottie_hello, height=100)
-st.markdown("<h1 style='text-align: center; font-family:  Inter,ui-sans-serif,system-ui; color: rgb(154, 93, 255);'>STYLE BAR</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; font-family:  cursive, sans-serif; color: rgb(154, 93, 255);'>STYLE BAR</h1>", unsafe_allow_html=True)
 #st.markdown("<h6 style='text-align: center; font-family:  cursive, sans-serif; color: #CB0B94;'>Made with love 💖</h1>", unsafe_allow_html=True)
 #st_lottie(lottie_barbar,height=200)
 
@@ -126,7 +126,7 @@ for i in range(0,len(url_array)-3):
         st.image(url_array[i+2])
         st.write(name_array[i+2])
 
-st.markdown("<h1 style='text-align: center; font-family:  Inter,ui-sans-serif,system-ui; color: rgb(154, 93, 255);'>Our Services</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; font-family:  cursive, sans-serif; color: rgb(154, 93, 255);'>OUR SERVICES</h1>", unsafe_allow_html=True)
 imageCarouselComponent = components.declare_component("image-carousel-component", path="frontend/public")
 
 imageUrls = [
@@ -177,7 +177,7 @@ with st.expander("Facial & skin treatment"):
      """)
      st.image("https://cdn.shopify.com/s/files/1/0282/5961/4817/files/SB-3-SHOP-NOW-BUTTONS-tools_600x.jpg?v=1587723060")
      
-st.markdown("<h1 style='text-align: center; font-family:  cursive, sans-serif; color: pink;'><b>Make An Appointment</b></h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; font-family:  cursive, sans-serif; color: rgb(154, 93, 255);'><b>Make An Appointment</b></h1>", unsafe_allow_html=True)
 #st.text_input("")
 names = pd.DataFrame({'labels':["GoodWell","HairBotox","Hannon","Joico","Moroccanoil","Mizani"]})
 nameSelect = st.multiselect(
@@ -187,7 +187,7 @@ nameSelect = st.multiselect(
  )
 st.date_input("Select the date:")
 st.button("BOOM")
-st.markdown("<h1 style='text-align: center; font-family:  cursive, sans-serif; color: pink;'><b>Some of Our Brands</b></h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; font-family:  cursive, sans-serif; color: rgb(154, 93, 255);'><b>Some of Our Brands</b></h1>", unsafe_allow_html=True)
 col1, col2 , col3 = st.columns(3) 
 col4, col5, col6 = st.columns(3)
 with col1: 
