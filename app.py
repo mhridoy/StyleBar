@@ -106,6 +106,16 @@ elif (selected3=="Booking"):
           st.time_input("Time")
         with col2: 
           st.text_input("Email")
+        st.subheader("Payment Information")
+        col1, col2, col3 = st.columns(3)
+        
+        with col1:
+          st.text_input("Credit Card Number")
+        with col2:
+          st.text_input("Exp Year:")
+        with col3:
+          st.text_input("CVC")
+        #my_form.form_submit_button()
         submitted = st.form_submit_button("Submit")
 elif(selected3=="Our Services"):
       def to_excel(df):
