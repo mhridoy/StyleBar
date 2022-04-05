@@ -55,7 +55,23 @@ hide_streamlit_style = """
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
-if(selected3=="Our Services"):
+if (selected3=="Booking"):
+      df= pd.read_csv("AllProductList.csv")
+      st.header("Request a New Appointment")
+      with st.form("my_form"):
+        col1, col2 = st.columns(2)
+        with col1:
+          options = st.multiselect(
+      'Select Services',options=list(df['Product List']),default=["Wash and Style"],)
+        with col2:
+            st.date_input("Date")
+        col1, col2 = st.columns(2)
+        with col1:
+          st.time_input("Time")
+        with col2: 
+          st.text_input("Email")
+        submitted = st.form_submit_button("Submit")
+elif(selected3=="Our Services"):
       def to_excel(df):
         output = BytesIO()
         writer = pd.ExcelWriter(output, engine='xlsxwriter')
@@ -71,14 +87,14 @@ if(selected3=="Our Services"):
       df2 = pd.read_csv("spaList.csv")
 
       st.subheader("Salon Sevices & Pricing")
-      st.write(df1)  
+      st.table(df1)  
       df_xlsx1 = to_excel(df1)
       st.download_button(label='📥 Download this price list',
                                 data=df_xlsx1 ,
                                 file_name= 'df_test.xlsx')
 
       st.subheader("Spa Sevices & Pricing")
-      st.write(df2)  
+      st.table(df2)  
       df_xlsx2 = to_excel(df2)
       st.download_button(label='📥 Download this price list',
                                 data=df_xlsx2 ,
@@ -244,16 +260,16 @@ elif(selected3=="Home"):
       """)
       st.image("https://cdn.shopify.com/s/files/1/0282/5961/4817/files/SB-3-SHOP-NOW-BUTTONS-tools_600x.jpg?v=1587723060")
       
-  st.markdown("<h1 style='text-align: center; font-family:  cursive, sans-serif; color: rgb(154, 93, 255);'><b>Make An Appointment</b></h1>", unsafe_allow_html=True)
-  #st.text_input("")
-  names = pd.DataFrame({'labels':["GoodWell","HairBotox","Hannon","Joico","Moroccanoil","Mizani"]})
-  nameSelect = st.multiselect(
-      "Type your category:",
-      options=list(names['labels']), # convert to list
-      default=["GoodWell"]
-  )
-  st.date_input("Select the date:")
-  st.button("Click Me!")
+  # st.markdown("<h1 style='text-align: center; font-family:  cursive, sans-serif; color: rgb(154, 93, 255);'><b>Make An Appointment</b></h1>", unsafe_allow_html=True)
+  # #st.text_input("")
+  # names = pd.DataFrame({'labels':["GoodWell","HairBotox","Hannon","Joico","Moroccanoil","Mizani"]})
+  # nameSelect = st.multiselect(
+  #     "Type your category:",
+  #     options=list(names['labels']), # convert to list
+  #     default=["GoodWell"]
+  # )
+  # st.date_input("Select the date:")
+  # st.button("Click Me!")
   st.markdown("<h1 style='text-align: center; font-family:  cursive, sans-serif; color: rgb(154, 93, 255);'><b>Some of Our Brands</b></h1>", unsafe_allow_html=True)
   col1, col2 , col3 = st.columns(3) 
   col4, col5, col6 = st.columns(3)
