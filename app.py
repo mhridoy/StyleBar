@@ -29,19 +29,19 @@ with st.sidebar:
     st.sidebar.image("logo.png", use_column_width=True,width=300)
   #st.sidebar.title("Haircut & Treatment")
 
-    st.subheader("About US")
+    st.title("About US")
     st.write("""Our Stylebar family was created because quite frankly we were bored of the same old generic salons that keep popping up and offer nothing more than average service in a bland setting. We have done something different, we have a created a luxurious and relaxing environment where you can celebrate just how fabulous you are. Our exceptional hair, nail and beauty services will leave you feeling pampered, rejuvenated and renewed.
   Our leading super salon has everything under one roof offering hair, nails, HD brows and makeup to all other beauty essentials. We have carefully put together a team that are guaranteed to offer you some of the best services around.
   Creativity and the perfection mean that we want to deliver more than good or even excellent, we want to be the number one choice for the style conscious.""")
  
 
-selected3 = option_menu(None, ["Home", "Our Services",  "Booking", 'Notifications'], 
+selected3 = option_menu(None, ["Home", "Our Services",  "Booking", 'Notifications','Login','Sign Up'], 
     icons=['house', 'cloud-upload', "list-task", 'gear'], 
     menu_icon="cast", default_index=0, orientation="horizontal",
     styles={
         "container": {"padding": "0!important", "background-color": "#fafafa"},
         "icon": {"color": "orange", "font-size": "25px"}, 
-        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
+        "nav-link": {"font-size": "20px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
         "nav-link-selected": {"background-color": "#CE33EE"},
     }
 )
@@ -72,11 +72,18 @@ if(selected3=="Our Services"):
 
       st.subheader("Salon Sevices & Pricing")
       st.write(df1)  
-      df_xlsx = to_excel(df1)
+      df_xlsx1 = to_excel(df1)
       st.download_button(label='📥 Download this price list',
-                                data=df_xlsx ,
+                                data=df_xlsx1 ,
                                 file_name= 'df_test.xlsx')
-        
+
+      st.subheader("Spa Sevices & Pricing")
+      st.write(df2)  
+      df_xlsx2 = to_excel(df2)
+      st.download_button(label='📥 Download this price list',
+                                data=df_xlsx2 ,
+                                file_name= 'df_test.xlsx')
+      
 elif(selected3=="Home"):
   lottie_url_download = "https://assets5.lottiefiles.com/packages/lf20_aabgnkl3.json"
 
