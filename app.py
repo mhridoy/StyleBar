@@ -219,7 +219,7 @@ elif(selected3=="Home"):
 
 
   # Search Options 
-  query = st.text_input("Search Our Products! ")
+  query = st.text_input("Search Our Services! ")
   st.button("Search")
   # Unsplash API KEY
   #api_key = "JSOFZJXh0Ejyo_FVM5ChHe86RuDrofHVi2qYD2g3rMU"
