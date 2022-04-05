@@ -24,8 +24,13 @@ with st.sidebar:
       #     icons=['home'],
       #     menu_icon="cast", default_index=1,
       #     )
-      st.subheader("About US")
-      st.write("""Our Stylebar family was created because quite frankly we were bored of the same old generic salons that keep popping up and offer nothing more than average service in a bland setting. We have done something different, we have a created a luxurious and relaxing environment where you can celebrate just how fabulous you are. Our exceptional hair, nail and beauty services will leave you feeling pampered, rejuvenated and renewed.
+
+  #st.set_page_config(page_title="StyleBar", layout="wide")
+    st.sidebar.image("logo.png", use_column_width=True,width=300)
+  #st.sidebar.title("Haircut & Treatment")
+
+    st.subheader("About US")
+    st.write("""Our Stylebar family was created because quite frankly we were bored of the same old generic salons that keep popping up and offer nothing more than average service in a bland setting. We have done something different, we have a created a luxurious and relaxing environment where you can celebrate just how fabulous you are. Our exceptional hair, nail and beauty services will leave you feeling pampered, rejuvenated and renewed.
   Our leading super salon has everything under one roof offering hair, nails, HD brows and makeup to all other beauty essentials. We have carefully put together a team that are guaranteed to offer you some of the best services around.
   Creativity and the perfection mean that we want to deliver more than good or even excellent, we want to be the number one choice for the style conscious.""")
  
@@ -73,24 +78,20 @@ if(selected3=="Our Services"):
                                 file_name= 'df_test.xlsx')
         
 elif(selected3=="Home"):
-
-  #st.set_page_config(page_title="StyleBar", layout="wide")
-  st.sidebar.image("logo.png", use_column_width=True,width=300)
-  #st.sidebar.title("Haircut & Treatment")
   lottie_url_download = "https://assets5.lottiefiles.com/packages/lf20_aabgnkl3.json"
 
 
   def load_lottieurl(url: str):
-      r = requests.get(url)
-      if r.status_code != 200:
-          return None
-      return r.json()
+        r = requests.get(url)
+        if r.status_code != 200:
+            return None
+        return r.json()
 
 
   lottie_url_hello = "https://assets5.lottiefiles.com/private_files/lf30_docl0D.json"
-  # lottie_url_download = "https://assets5.lottiefiles.com/private_files/lf30_docl0D.json"
+    # lottie_url_download = "https://assets5.lottiefiles.com/private_files/lf30_docl0D.json"
   lottie_hello = load_lottieurl(lottie_url_hello)
-  # lottie_download = load_lottieurl(lottie_url_download)
+    # lottie_download = load_lottieurl(lottie_url_download)
   lottie_url_barbar = "https://assets7.lottiefiles.com/packages/lf20_lo5a0g5i.json"
   lottie_barbar =load_lottieurl(lottie_url_barbar)
 
