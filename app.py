@@ -634,4 +634,3 @@ function showSlides() {
 
       # Every form must have a submit button.
       submitted = st.form_submit_button("Submit")
-a
