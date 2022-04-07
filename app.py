@@ -56,7 +56,28 @@ hide_streamlit_style = """
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
-st.write('<style>div.block-container{padding-top:3.5rem;}</style>', unsafe_allow_html=True)
+##################
+
+st.markdown("""
+        <style>
+               .css-18e3th9 {
+                    padding-top: 3.52rem;
+                    padding-bottom: 10rem;
+                    padding-left: 5rem;
+                    padding-right: 5rem;
+                }
+               .css-1d391kg {
+                    padding-top: 3.5rem;
+                    padding-right: 1rem;
+                    padding-bottom: 3.5rem;
+                    padding-left: 1rem;
+                }
+        </style>
+        """, unsafe_allow_html=True)
+
+
+###############
+#st.write('<style>div.block-container{padding-top:3.5rem;}</style>', unsafe_allow_html=True)
 if (selected3=="Sign Up"):
     st.title("Registration")
     my_form = st.form(key='form-1')
