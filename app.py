@@ -449,7 +449,7 @@ function showSlides() {
       st.video("https://youtu.be/IX6_Uip8eA0")
 
   with col2:
-      st.video("https://youtu.be/IX6_Uip8eA0")
+      st.video("https://youtu.be/c0JzlF0eRJs")
 
 
   user_ratings ="""
