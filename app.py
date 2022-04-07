@@ -220,7 +220,7 @@ elif(selected3=="Home"):
 
 
   # Search Options 
-  query = st.text_input("Search Our Products! ")
+  query = st.text_input("Search Our Services! ")
   st.button("Search")
   # Unsplash API KEY
   #api_key = "JSOFZJXh0Ejyo_FVM5ChHe86RuDrofHVi2qYD2g3rMU"
@@ -343,17 +343,17 @@ img {vertical-align: middle;}
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
   <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" style="width:100%">
-  <div class="text">Car Repair</div>
+  <div class="text">Style Bar</div>
 </div>
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
   <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" style="width:100%">
-  <div class="text">Car Repair</div>
+  <div class="text">Style Bar</div>
 </div>
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
   <img src="https://images.unsplash.com/photo-1595475884562-073c30d45670?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" style="width:100%">
-  <div class="text">Car Repair</div>
+  <div class="text">Style Bar</div>
 </div>
 </div>
 <br>
@@ -634,3 +634,4 @@ function showSlides() {
 
       # Every form must have a submit button.
       submitted = st.form_submit_button("Submit")
+a
