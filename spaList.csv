@@ -1,40 +1,40 @@
-SL NO,Item Name,Price
-1,Hydrate Facial: 30 or 50 minutes,$50-65+
-2,Revitalize Facial: 30 or 50 minute,$50-65+
-3,Retexturize Facial: 30 or 50 minute,$50-65+
-4,Pure Clarity Facial: 30 or 50 minute,$50-65+
-5,High Frequency Facial,$75+
-6,Ultrasonic Facial,$75+
-7,Microdermabrasion Facial,$75+
-8,Dermaplaning Facial,$90+
-9,Chemical Peel,$80+
-10,Oxygenating Facial,$80+
-11,Detoxifying Deep Pore Treatment with Ultrasonic,$80+
-12,Micro-Needling,$170-205+
-13,Brow Wax,$15+
-14,Lip or Chin,$10+
-15,Combo of Lip and Chin,$22+
-16,Full Face Wax,$45+
-17,Half Leg Wax,$40+
-18,Full Leg Wax,$60+
-19,Half Arm Wax,$30+
-20,Full Arm Wax,$40+
-21,Armpit Wax,$25+
-22,Bikini Wax,$40+
-23,Extended Bikini Wax,$50+
-24,Brazilian Wax,$70+
-25,Brazilian Maintenance,$55+
-26,Brazilian Trimming,$25+
-27,Brow Tint,$22+
-28,Lash Tint,$22+
-29,Lash and Brow tint,$40+
-30,Classic Lash Set,$140+
-31,Volume Lash Set,$200+
-32,Mega Lash Fill,$90+`
-33,Volume Lash Fill,$75+
-34,Classic Lash Fill,$50+
-35,Mini Lash Fill,$45+
-36,Lash Removal,$25+
-37,Lash Lift and Tint,$70+
-38,Microblading,Requires Consultation
-39,Microblading Touch Up,Requires Consultation
+ID Number,Item Name,Price
+#ABCD10,Hydrate Facial: 30 or 50 minutes,1050-65+
+#ABCD11,Revitalize Facial: 30 or 50 minute,1050-65+
+#ABCD12,Retexturize Facial: 30 or 50 minute,1050-65+
+#ABCD13,Pure Clarity Facial: 30 or 50 minute,1050-65+
+#ABCD14,High Frequency Facial,1075+
+#ABCD15,Ultrasonic Facial,1075+
+#ABCD16,Microdermabrasion Facial,1075+
+#ABCD17,Dermaplaning Facial,1090+
+#ABCD18,Chemical Peel,1080+
+#ABCD19,Oxygenating Facial,1080+
+#ABCD20,Detoxifying Deep Pore Treatment with Ultrasonic,1080+
+#ABCD21,Micro-Needling,10170-205+
+#ABCD22,Brow Wax,1015+
+#ABCD23,Lip or Chin,1010+
+#ABCD24,Combo of Lip and Chin,1022+
+#ABCD25,Full Face Wax,1045+
+#ABCD26,Half Leg Wax,1040+
+#ABCD27,Full Leg Wax,1060+
+#ABCD28,Half Arm Wax,1030+
+#ABCD29,Full Arm Wax,1040+
+#ABCD30,Armpit Wax,1025+
+#ABCD31,Bikini Wax,1040+
+#ABCD32,Extended Bikini Wax,1050+
+#ABCD33,Brazilian Wax,1070+
+#ABCD34,Brazilian Maintenance,1055+
+#ABCD35,Brazilian Trimming,1025+
+#ABCD36,Brow Tint,1022+
+#ABCD37,Lash Tint,1022+
+#ABCD38,Lash and Brow tint,1040+
+#ABCD39,Classic Lash Set,10140+
+#ABCD40,Volume Lash Set,10200+
+#ABCD41,Mega Lash Fill,1090+`
+#ABCD42,Volume Lash Fill,1075+
+#ABCD43,Classic Lash Fill,1050+
+#ABCD44,Mini Lash Fill,1045+
+#ABCD45,Lash Removal,1025+
+#ABCD46,Lash Lift and Tint,1070+
+#ABCD47,Microblading,Requires Consultation
+#ABCD48,Microblading Touch Up,Requires Consultation

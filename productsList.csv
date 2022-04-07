@@ -1,29 +1,29 @@
-SL NO,Style Name,Price
-1,Special Occasion Updo,$65+
-2,Wash and Style,$25+
-3,Deep Conditioning Treatment,$30+
-4,Women's Cut,$40+
-5,Men's Cut ,$20+
-6,Kid's Cut,$15+
-7,Bang Trim,$10+
-8,All Over Color,$80+
-9,Color Root Touch Up,$70+
-10,Full Balayage,$110+
-11,Partial Balayage,$85+
-12,Reverse Balayage,$115+
-13,Partial Foil,$85+
-14,Partial Foil with an All Over Color,$115+
-15,Full Foil,$110+
-16,Full Foil with an All Over Color,$140+
-17,Full Bleach and Tone,$110+
-18,Bleach and Tone Retouch,$70+
-19,Corrective Color ,Requires Consultation
-20,Mini Foil,$45+
-21,Accent Foil,$50+
-22,Ombre,$110+
-23,Designer Perm,$85+
-24,Extension Consultation,$250+
-25,Extention Application,$250+
-26,Extension Move Up,$20+
-27,Toner ,$25+
-28,Undercut,$20 
+ID Number,Style Name,Price
+#DEFG10,Special Occasion Updo,1065+
+#DEFG11,Wash and Style,1025+
+#DEFG12,Deep Conditioning Treatment,1030+
+#DEFG13,Women's Cut,1040+
+#DEFG14,Men's Cut ,1020+
+#DEFG15,Kid's Cut,1015+
+#DEFG16,Bang Trim,1010+
+#DEFG17,All Over Color,1080+
+#DEFG18,Color Root Touch Up,1070+
+#DEFG19,Full Balayage,10110+
+#DEFG20,Partial Balayage,1085+
+#DEFG21,Reverse Balayage,10115+
+#DEFG22,Partial Foil,1085+
+#DEFG23,Partial Foil with an All Over Color,10115+
+#DEFG24,Full Foil,10110+
+#DEFG25,Full Foil with an All Over Color,10140+
+#DEFG26,Full Bleach and Tone,10110+
+#DEFG27,Bleach and Tone Retouch,1070+
+#DEFG28,Corrective Color ,Requires Consultation
+#DEFG29,Mini Foil,1045+
+#DEFG30,Accent Foil,1050+
+#DEFG31,Ombre,10110+
+#DEFG32,Designer Perm,1085+
+#DEFG33,Extension Consultation,10250+
+#DEFG34,Extention Application,10250+
+#DEFG35,Extension Move Up,1020+
+#DEFG36,Toner ,1025+
+#DEFG37,Undercut,1020
